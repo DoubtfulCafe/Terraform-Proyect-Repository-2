@@ -1,5 +1,5 @@
 resource "azurerm_linux_function_app" "queue_processor" {
-  name                = "func-${var.project}-${var.enviroment}"
+  name                = "func-${var.project}-${var.enviroment}-dv"
   location            = var.location
   resource_group_name = data.azurerm_resource_group.resource_group.name
 

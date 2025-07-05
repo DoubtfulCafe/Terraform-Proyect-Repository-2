@@ -8,6 +8,6 @@ data "azurerm_resource_group" "resource_group" {
 }
 
 data "azurerm_storage_account" "saccount" {
-  name                = "sa${var.project}${var.enviroment}"
+  name                = "sa${var.project}${var.enviroment}dv"
   resource_group_name = data.azurerm_resource_group.resource_group.name
 }

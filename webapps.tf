@@ -1,6 +1,6 @@
 // Frontoffice UI Web App
 resource "azurerm_linux_web_app" "front_ui" {
-  name                = "ui-front-${var.project}-${var.enviroment}"
+  name                = "ui-front-${var.project}-${var.enviroment}-dv"
   location            = var.location
   resource_group_name = data.azurerm_resource_group.resource_group.name
   service_plan_id     = azurerm_service_plan.frontoffice_sp.id
@@ -22,7 +22,7 @@ resource "azurerm_linux_web_app" "front_ui" {
 
 // Frontoffice API Web App
 resource "azurerm_linux_web_app" "front_api" {
-  name                = "api-front-${var.project}-${var.enviroment}"
+  name                = "api-front-${var.project}-${var.enviroment}-dv"
   location            = var.location
   resource_group_name = data.azurerm_resource_group.resource_group.name
   service_plan_id     = azurerm_service_plan.frontoffice_sp.id
@@ -44,7 +44,7 @@ resource "azurerm_linux_web_app" "front_api" {
 
 // Backoffice UI Web App
 resource "azurerm_linux_web_app" "back_ui" {
-  name                = "ui-back-${var.project}-${var.enviroment}"
+  name                = "ui-back-${var.project}-${var.enviroment}-dv"
   location            = var.location
   resource_group_name = data.azurerm_resource_group.resource_group.name
   service_plan_id     = azurerm_service_plan.backoffice_sp.id
@@ -66,7 +66,7 @@ resource "azurerm_linux_web_app" "back_ui" {
 
 // Backoffice API Web App
 resource "azurerm_linux_web_app" "back_api" {
-  name                = "api-back-${var.project}-${var.enviroment}"
+  name                = "api-back-${var.project}-${var.enviroment}-dv"
   location            = var.location
   resource_group_name = data.azurerm_resource_group.resource_group.name
   service_plan_id     = azurerm_service_plan.backoffice_sp.id
